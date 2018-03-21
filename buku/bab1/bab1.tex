@@ -1,36 +1,37 @@
 \chapter{PENDAHULUAN}
 
 \section{Latar Belakang}
-\tab PT Bank Rakyat Indonesia (BRI) merupakan satu-satunya Bank di dunia yang memilik satelit sendiri. Satelit yang dinamakan BRIsat ini diluncurkan dan mengorbit sejak 9 Juni 2016 lalu. Adanya satelit ini bertujuan untuk menjangkau nasabah BRI di seluruh Indonesia. Khususnya di daerah-daerah terpencil.
-\tab Sebelumnya, untuk penanganan kebutuhan komunikasi data dengan ribuan kantor wilayah, kantor cabang, KCP, BRI Unit, Teras BRI dan 22.792 ATMnya, BRI menyewa transponder satelit lain. Dengan adanya satelit milik BRI sendiri, mulai diadakan relokasi ATM yang akan diarahkan kepada satelitnya sendiri.\\
-\tab Kegiatan relokasi ini dalam sehari mencapai 100 titik atau lebih. Saat ini, untuk pencatatan kegiatan relokasinya hanya dilakukan dengan menggunakan \textit{tools} berupa Microsoft Excel. Oleh karena itu, dibutuhkan suatu sistem untuk memonitoring kegiatan relokasi ATM menuju BRIsat\cite{bri}.
+\tab Saat ini Telkomsel adalah operator seluler terbesar di Indonesia dengan 178 juta pelanggan dan untuk melayani pelanggannya yang tersebar di seluruh Indonesia, termasuk juga di daerah terpencil dan pulau terluar serta daerah perbatasan negara, Telkomsel menggelar lebih dari 146 ribu BTS. \\
+\tab Untuk memberikan layanan yang prima kepada masyarakat di dalam menikmati gaya hidup digital (\textit{digital lifestyle}), Telkomsel turut membangun ekosistem digital di tanah air melalui berbagai upaya pengembangan DNA (\textit{Device}, \textit{Network} dan \textit{Applications}), yang diharapkan akan mempercepat terbentuknya masyarakat digital Indonesia.\\
+\tab Sebelumnya, untuk pencatatan hasil pencapaian \textit{revenue} hanya dilakukan dengan menggunakan \textit{tools} berupa Microsoft Excel dan media \textit{WhatsApp} maupun \textit{E-mail} untuk menyebarkan hasilnya. Oleh karena itu, dibutuhkan suatu sistem untuk memantau pencapai \textit{revenue digital services} yang disediakan oleh Telkomsel\cite{telkomsel}.
 
 \section{Tujuan}
-Pembuatan Sistem Monitoring SIK ini bertujuan untuk:
+Pembuatan Sistem TPORT ini bertujuan untuk:
 \begin{enumerate}
-\item Memudahkan monitoring kegiatan relokasi ATM
+\item Pengolahan data langsung melalui aplikasi web yang dibangun
+\item Tersedianya informasi laporan hasil pencapaian tanpa harus disebarkan melalui \textit{WhatsApp} atau \textit{E-mail}
 \item Melakukan efisiensi kerja 
 \end{enumerate}
 
 \section{Manfaat}
-Manfaat dari pembuatan Sistem Monitoring SIK ini adalah sebagai berikut:
+Manfaat dari pembuatan Sistem TPORT adalah sebagai berikut:
 
 \begin{enumerate}
-	\item Membuat pengerjaan monitoring relokasi ATM lebih efisien
-	\item Membantu memudahkan kegiatan monitoring relokasi ATM
+	\item Memudahkan proses pemantauan pencapaian \textit{revenue}
+	\item Memudahkan penyebaran hasil karena sudah bisa dibuka pada aplikasi web yang dibangun
 \end{enumerate}
 
 \section{Rumusan Masalah}
 Rumusan Masalah dari Kerja Praktik ini adalah sebagai berikut:
 
 \begin{enumerate}
-	\item Bagaimana menciptakan aplikasi web monitoring yang mudah dimengerti oleh pengguna?
-	\item Bagaimana menciptakan aplikasi web monitoring yang dapat membantu efisiensi pengerjaan relokasi ATM?
+	\item Bagaimana menciptakan aplikasi web yang mudah dimengerti oleh pengguna?
+	\item Bagaimana menciptakan aplikasi web TPORT sehingga mempermudah proses pemantauan pencapaian \textit{revenue}?
 \end{enumerate}
 
 \section{Lokasi dan Waktu Kerja Praktik}
-\tab Lokasi kerja praktik berada di PT. Bank Rakyat Indonesia dengan alamat Jalan RM. Harsono, RT 6/ RW 7, Ragunan, Pasar Minggu, Jakarta Selatan.\\
-\tab Adapun kerja praktik dimulai pada tanggal 14 Juni 2017 hingga 9 Agustus 2017 dengan hari kerja Senin sampai Jumat pukul 07.30 sampai dengan pukul 16.30 WIB (8 jam kerja dan 1 jam istirahat).
+\tab Lokasi kerja praktik berada di Grapari Pemuda dengan alamat Jalan Pemuda No 27-31, Embong Kaliasin, Genteng, Surabaya.\\
+\tab Adapun kerja praktik dimulai pada tanggal 8 Januari 2018 hingga 9 Februari 2018 dengan hari kerja Senin sampai Jumat pukul 08.00 sampai dengan pukul 17.00 WIB (8 jam kerja dan 1 jam istirahat).
 
 \section{Metodologi}
 Metodologi dalam pembuatan buku Kerja Praktik ini meliputi:
@@ -41,7 +42,7 @@ Metodologi dalam pembuatan buku Kerja Praktik ini meliputi:
 	\item \textbf{Studi Literatur}\\
 	Pada tahap ini, setelah ditentukannya DBMS, bahasa pemrograman sampai dengan framework yang digunakan, dilakukan studi literatur lanjut mengenai bagaimana penggunaannya dalam membangun sistem sesuai yang diharapkan.
 	
-	Secara garis besar, untuk membuat Monitoring SIK digunakan bahasa pemrograman HTML, CSS, Javascript dan PHP untuk back end sistem, serta DBMS MySQL sebagai penyimpanan data relokasi, yang dikemas	melalui framework Laravel.
+	Secara garis besar, untuk membuat TPORT digunakan bahasa pemrograman HTML, CSS, Javascript dan PHP untuk \textit{back end} sistem, serta DBMS MySQL sebagai penyimpanan data pencapaian \textit{revenue}, yang dikemas	melalui framework Laravel.
 	
 	\item \textbf{Analisis dan Perancangan Sistem}\\
 	Pada tahap ini akan dijelaskan tentang analisis serta perancangan sistem yang akan dibangun oleh penulis.
@@ -65,7 +66,7 @@ Laporan Kerja Praktik ini terbagi menjadi 7 bab dengan rincian sebagai berikut:
 		
 	\item BAB II: PROFIL PERUSAHAAN
 		
-	Bab ini berisi gambaran umum PT Bank Rakyat Indonesia, mulai dari sejarah, tujuan, visi dan misi perusahaan, dan divisi tempat kerja praktik dilakukan.
+	Bab ini berisi gambaran umum PT Telekomunikasi Seluler Indonesia, mulai dari sejarah, tujuan, visi dan misi perusahaan, dan divisi tempat kerja praktik dilakukan.
 		
 	\item BAB III: TINJAUAN PUSTAKA
 		
