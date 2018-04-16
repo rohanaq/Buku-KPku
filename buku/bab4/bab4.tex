@@ -2,9 +2,11 @@
 \tab Pada bab ini akan dijelaskan mengenai desain dan implementasi rancangan sistem informasi untuk memantau pencapaian \textit{revenue} oleh Telkomsel Regional Jawa Timur. Sistem informasi untuk memantau pencapaian \textit{revenue} ini digunakan untuk memudahkan proses pengolahan data serta penyebaran informasi. Aplikasi web ini dikhususkan untuk internal Telkomsel.
 
 \section{Mengelola Data \textit{Revenue}}
-Berikut adalah deskripsi sistem dan diagram aktivitas pada \textit{use case} Mengelola Data \textit{Revenue}. 
+Berikut adalah deskripsi sistem dan diagram aktivitas pada \textit{use case} Mengelola Data \textit{Revenue}.
+
 \subsection{Deskripsi Umum Sistem}
 \tab Sistem akan menyimpan informasi mengenai data \textit{revenue}. Data yang dimasukkan akan disimpan ke dalam basis data. Pada kegiatan ini, terdapat sebuah parameter berupa cluster mana yang akan dimasukkan datanya ke basis data.
+
 \subsection{\textit{Use Case} dan Fitur Sistem}
 Gambar \ref{figure:use_case_mengelola_data_revenue} adalah \textit{use case} mengelola data \textit{revenue}. Pada pengelolaan data \textit{revenue}, pengguna dapat melakukan beberapa kegiatan sebagai berikut:
 
@@ -14,28 +16,39 @@ Gambar \ref{figure:use_case_mengelola_data_revenue} adalah \textit{use case} men
 		\label{figure:use_case_mengelola_data_revenue}
 	\end{figure}
 	
-	\subsubsection{Menambah Data \textit{Revenue}}
-	Pengguna dapat menambahkan data \textit{revenue}. Diagram \ref{figure:activity_menambah_data_revenue} adalah diagram aktivitas menambah data \textit{revenue} pada sistem TPORT. Pada pengisian form untuk mengupload data \textit{revenue}, pengguna harus menentukan rentang waktu data yang tersedia serta \textit{cluster} mana yang akan diupload datanya.
+\subsubsection{Menambah Data \textit{Revenue}}
+Pengguna dapat menambahkan data \textit{revenue}. Diagram \ref{figure:activity_menambah_data_revenue} adalah diagram aktivitas menambah data \textit{revenue} pada sistem TPORT. Pada pengisian form untuk mengupload data \textit{revenue}, pengguna harus menentukan rentang waktu data yang tersedia serta \textit{cluster} mana yang akan diupload datanya.
 	
 	\begin{figure}[h]
-	\centerline {\includegraphics[width=9cm,height=6cm]{bab4/activity_menambah_data_revenue.png}}
+	\centerline {\includegraphics[width=8cm,height=6cm]{bab4/activity_menambah_data_revenue.png}}
 	\caption{Diagram Aktivitas Menambah Data \textit{Revenue}}
 	\label{figure:activity_menambah_data_revenue}
 	\end{figure}
 		
-	\subsubsection{Mengubah Data \textit{Revenue}}
-	Pengguna dapat mengubah data \textit{revenue}. Diagram \ref{figure:activity_mengubah_data_revenue} adalah diagram aktivitas mengubah data \textit{revenue} pada sistem TPORT. Untuk mengubah data yang sudah diupload, pengguna harus melakukan \textit{step} yang sama seperti menambahkan data baru. Sistem akan secara otomatis menggantikan data lama dengan data yang baru.
+\subsubsection{Mengubah Data \textit{Revenue}}
+Pengguna dapat mengubah data \textit{revenue}. Diagram \ref{figure:activity_mengubah_data_revenue} adalah diagram aktivitas mengubah data \textit{revenue} pada sistem TPORT. Untuk mengubah data yang sudah diupload, pengguna harus melakukan \textit{step} yang sama seperti menambahkan data baru. Sistem akan secara otomatis menggantikan data lama dengan data yang baru.
 	
 	\begin{figure}[h]
-	\centerline {\includegraphics[width=7cm,height=5cm]{bab4/activity_mengubah_data_revenue.png}}
+	\centerline {\includegraphics[width=7cm,height=6cm]{bab4/activity_mengubah_data_revenue.png}}
 	\caption{Diagram Aktivitas Mengubah Data \textit{Revenue}}
 	\label{figure:activity_mengubah_data_revenue}
 	\end{figure}
 
+\subsubsection{Menghapus Data \textit{Revenue}}
+Sistem dapat menghapus data \textit{revenue}. Diagram \ref{figure:activity_menghapus_data_revenue} adalah diagram aktivitas menghapus data \textit{revenue} pada sistem TPORT. Sistem akan secara otomatis menghapus data \textit{revenue} dengan rentang waktu 23 bulan sejak tanggal sistem saat ini. 
+	
+	\begin{figure}[h]
+		\centerline {\includegraphics[width=5cm,height=6cm]{bab4/activity_menghapus_data_revenue.png}}
+		\caption{Diagram Aktivitas Mengubah Data \textit{Revenue}}
+		\label{figure:activity_menghapus_data_revenue}
+	\end{figure}
+	
 \section{Mengelola Target Pencapaian \textit{Revenue}}
 Berikut adalah deskripsi dan diagram aktivitas pada \textit{use case} Mengelola Target Pencapaian \textit{Revenue}.
+
 \subsection{Deskripsi Umum Sistem}
 \tab Sistem ini akan melakukan pengelolaan target pencapaian \textit{revenue}. Pada kegiatan ini, terdapat sebuah parameter berupa cluster mana yang akan ditentukan targetnya. Data yang dimasukkan akan disimpan ke dalam basis data.
+
 \subsection{\textit{Use Case} dan Fitur Sistem}
 Gambar \ref{figure:use_case_mengelola_target_pencapaian} adalah \textit{use case} mengelola target pencapaian \textit{revenue}. Pada pengelolaan target pencapaian \textit{revenue}, pengguna dapat melakukan beberapa kegiatan sebagai berikut:
 
@@ -45,8 +58,8 @@ Gambar \ref{figure:use_case_mengelola_target_pencapaian} adalah \textit{use case
 		\label{figure:use_case_mengelola_target_pencapaian}
 	\end{figure}
 
-	\subsubsection{Menambah Target Pencapaian \textit{Revenue}}
-	Pengguna dapat menambahkan target pencapaian \textit{revenue} untuk tiap cluster yang ada. Diagram \ref{figure:activity_menambah_target_pencapaian_revenue} adalah diagram aktivitas menambah target pencapaian \textit{revenue} pada sistem TPORT.
+\subsubsection{Menambah Target Pencapaian \textit{Revenue}}
+Pengguna dapat menambahkan target pencapaian \textit{revenue} untuk tiap cluster yang ada. Diagram \ref{figure:activity_menambah_target_pencapaian_revenue} adalah diagram aktivitas menambah target pencapaian \textit{revenue} pada sistem TPORT.
 	
 	\begin{figure}[h]
 	\centerline {\includegraphics[width=9cm,height=6cm]{bab4/activity_menambah_target_pencapaian_revenue.png}}
@@ -54,41 +67,65 @@ Gambar \ref{figure:use_case_mengelola_target_pencapaian} adalah \textit{use case
 	\label{figure:activity_menambah_target_pencapaian_revenue}
 	\end{figure}
 		
-	\subsubsection{Mengubah Target Pencapaian \textit{Revenue}}
-	User dapat mengubah data target pencapaian yang telah ditambahkan. Diagram \ref{figure:activity_mengubah_target_pencapaian_revenue} adalah diagram aktivitas mengubah target pencapaian \textit{revenue} pada sistem TPORT.
+\subsubsection{Mengubah Target Pencapaian \textit{Revenue}}
+User dapat mengubah data target pencapaian yang telah ditambahkan. Diagram \ref{figure:activity_mengubah_target_pencapaian_revenue} adalah diagram aktivitas mengubah target pencapaian \textit{revenue} pada sistem TPORT.
 	
 	\begin{figure}[h]
 	\centerline {\includegraphics[width=9cm,height=5.6cm]{bab4/activity_mengubah_target_pencapaian_revenue.png}}
 	\caption{Diagram Aktivitas Mengubah Target Pencapaian \textit{Revenue}}
 	\label{figure:activity_mengubah_target_pencapaian_revenue}
-	\end{figure}		
-	
-\section{Melihat Finish}
-Berikut adalah deskripsi dan diagram aktivitas pada \textit{use case} Melihat Finish.
+	\end{figure}
+		
+\section{Melihat Hasil Pencapaian \textit{Revenue}}
+Berikut adalah deskripsi dan diagram aktivitas pada \textit{use case} Melihat Hasil Pencapaian \textit{Revenue}.
+
 \subsection{Deskripsi Umum Sistem}
-\tab Sistem dapat menampilkan daftar permintaan relokasi dengan status telah dibayar.
+\tab Sistem dapat menampilkan hasil pencapaian \textit{revenue} sesuai dengan kategori yang dipilih oleh pengguna.
+
 \subsection{\textit{Use Case} dan Fitur Sistem}
-Gambar \ref{figure:use_case_melihat_finish} adalah \textit{use case} melihat daftar permintaan relokasi dengan status telah dibayar. Pada halaman melihat daftar permintaan relokasi dengan status telah dibayar, user dapat melakukan beberapa kegiatan sebagai berikut:
-	\subsubsection{Melihat Finish}
-	User dapat melihat daftar permintaan relokasi dengan status telah dibayar. Diagram \ref{figure:activity_melihat_finish} adalah diagram aktivitas melihat daftar penagihan pembayaran permintaan relokasi pada sistem \textit{Monitoring} SIK.
+Gambar \ref{figure:use_case_melihat_hasil_pencapaian_revenue} adalah \textit{use case} melihat hasil pencapaian \textit{revenue}. Pada halaman \textit{request}, pengguna dapat memilih kategori mana yang ingin dilihat hasilnya. Pengguna dapat melakukan beberapa kegiatan sebagai berikut:
+
+	\begin{figure}[h!]
+		\centerline
+		{\includegraphics[width=9cm,height=5cm]{bab4/use_case_melihat_target_pencapaian_revenue.png}}
+		\caption{Diagram \textit{Use Case} Melihat Target Pencapaian \textit{Revenue}}
+		\label{figure:use_case_melihat_hasil_pencapaian_revenue}
+	\end{figure}
+	
+\subsubsection{Melihat L1}
+Pengguna dapat melihat target pencapaian \textit{revenue} berdasarkan L1. Diagram \ref{figure:activity_melihat_finish} adalah diagram aktivitas melihat target pencapaian \textit{revenue} sesuai kategori L1.
+
 	\begin{figure}[h]
 	\centerline {\includegraphics[width=9cm,height=5.5cm]{bab4/ActivityDiagram_MelihatFinish.png}}
 	\caption{Diagram Aktivitas Melihat Daftar Permintaan Relokasi Sudah Dibayar}
 	\label{figure:activity_melihat_finish}
 	\end{figure}
 
-	\begin{figure}[h!]
-	\centerline
-	{\includegraphics[width=9cm,height=5cm]{bab4/use-case-melihat-finish.png}}
-	\caption{Diagram \textit{Use Case} Melihat Daftar Permintaan Relokasi Sudah Dibayar}
-	\label{figure:use_case_melihat_finish}
-	\end{figure}
+\subsubsection{Melihat L3}
+Pengguna dapat melihat target pencapaian \textit{revenue} berdasarkan L3. Diagram \ref{figure:activity_melihat_finish} adalah diagram aktivitas melihat target pencapaian \textit{revenue} sesuai kategori L3.
+
+\begin{figure}[h]
+	\centerline {\includegraphics[width=9cm,height=5.5cm]{bab4/ActivityDiagram_MelihatFinish.png}}
+	\caption{Diagram Aktivitas Melihat Daftar Permintaan Relokasi Sudah Dibayar}
+	\label{figure:activity_melihat_finish}
+\end{figure}
+
+\subsubsection{Melihat Top 5}
+Pengguna dapat melihat 5 pencapaian \textit{revenue} tertinggi berdasarkan perhitungan pada kategori L3. Diagram \ref{figure:activity_melihat_finish} adalah diagram aktivitas melihat 5 pencapaian \textit{revenue} tertinggi.
+
+\begin{figure}[h]
+	\centerline {\includegraphics[width=9cm,height=5.5cm]{bab4/ActivityDiagram_MelihatFinish.png}}
+	\caption{Diagram Aktivitas Melihat Daftar Permintaan Relokasi Sudah Dibayar}
+	\label{figure:activity_melihat_finish}
+\end{figure}
 	
 \newpage
 \section{Perancangan Data}
-\tab Dalam pembuatan sebuah sistem informasi, database merupakan salah satu faktor utama yang penting. Perancangan dan alur data pada sebuah sistem harus dapat memenuhi kebutuhan-kebutuhan sistem, meliputi penambahan data, perubahan isi data dan penghapusan data dari basisdata sistem. Berikut adalah perancangan data pada sistem informasi \textit{monitoring} SIK.
+\tab Dalam pembuatan sebuah sistem informasi, database merupakan salah satu faktor utama yang penting. Perancangan dan alur data pada sebuah sistem harus dapat memenuhi kebutuhan-kebutuhan sistem, meliputi penambahan data, perubahan isi data dan penghapusan data dari basis data sistem. Berikut adalah perancangan data pada sistem informasi TPORT.
+
 \subsection{\textit{Conceptual Data Model}}
-CDM (\textit{Conceptual Data Model}) merupakan sebuah model yang didasarkan pada objek-objek di dunia nyata. Objek dasar tersebut direpresentasikan dalam bentuk \textit{entity relationship diagram}. Gambar \ref{figure:CDM} adalah CDM pada pembuatan sistem informasi \textit{monitoring} SIK.
+CDM (\textit{Conceptual Data Model}) merupakan sebuah model yang didasarkan pada objek-objek di dunia nyata. Objek dasar tersebut direpresentasikan dalam bentuk \textit{entity relationship diagram}. Gambar \ref{figure:CDM} adalah CDM pada pembuatan sistem informasi TPORT.
+
 	\begin{figure}[h!]
 	\centerline
 	{\includegraphics[width=10cm,height=14cm]{bab4/CDM.png}}
@@ -97,10 +134,11 @@ CDM (\textit{Conceptual Data Model}) merupakan sebuah model yang didasarkan pada
 	\end{figure}
 	
 \subsection{\textit{Physical Data Model}}
-PDM (\textit{Physical Data Model}) adalah model yang digambarkan dalam sebuah tabel serta hubungan-hubungan antara data dengan tabel lain. Gambar \ref{figure:PDM} adalah PDM pada pembuatan sistem informasi \textit{monitoring} SIK.
+PDM (\textit{Physical Data Model}) adalah model yang digambarkan dalam sebuah tabel serta hubungan-hubungan antara data dengan tabel lain. Gambar \ref{figure:PDM} adalah PDM pada pembuatan sistem informasi TPORT.
+
 	\begin{figure}[h!]
 	\centerline
-	{\includegraphics[width=10cm,height=11cm]{bab4/PDM.png}}
+	{\includegraphics[width=10cm,height=15cm]{bab4/PDM.png}}
 	\caption{Diagram \textit{Physical Data Model}}
 	\label{figure:PDM}
 	\end{figure}
