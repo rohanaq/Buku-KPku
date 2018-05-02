@@ -17,37 +17,44 @@ Pada bab ini akan dipaparkan implementasi dari sistem yang dibangun. Bahasa pemr
 	\end{itemize}
 \end{enumerate}
 
-\section{Tampilan Fitur Aplikasi Monitoring SIK}
-Berikut adalaha tampilan aplikasi \textit{monitoring} SIK.
-\subsection{Halaman \textit{Dashboard} \textit{Monitoring} SIK}
-Pada halaman tampilan \textit{dashboard Monitoring} SIK ini menggunakan HTML, CSS dan PHP untuk tampilan sistem. Penampilan data pada halaman ini bersifat dinamis. Semua fitur pada aplikasi \textit{Monitoring} SIK didaftar secara rinci dan dikemas dalam tampilan \textit{grid}. Kemudian ketika salah satu fitur dipilih oleh user, maka akan diarahkan pada halaman sesuai fitur yang dipilih. Gambar \ref{lst:dashboard} adalah potongan kode dari halaman \textit{dashboard Monitoring} SIK.
+\section{Tampilan Fitur Aplikasi TPORT}
+Berikut adalah tampilan aplikasi TPORT.
 
-\lstinputlisting[language=PHP, firstline=19, lastline=38, firstnumber=1, caption=Potongan Kode Tampilan \textit{Dashboard Monitoring} SIK, label={lst:dashboard}]{bab5/src/MainController.php}
+\subsection{Tampilan Halaman \textit{Request} TPORT}
+Tampilan halaman \textit{request} TPORT menggunakan bahasa pemrograman HTML, CSS, Javascript dan PHP untuk tampilan sistem. Penampilan data pada halaman ini bersifat dinamis. Semua fitur pada aplikasi TPORT didaftar secara rinci dan dikemas dalam tampilan statis. Kemudian ketika salah satu fitur dipilih oleh user, maka akan diarahkan pada halaman sesuai fitur yang dipilih. Gambar \ref{figure:requestTPORT} adalah tampilan halaman dan gambar \ref{lst:request} adalah potongan kode dari halaman \textit{request} TPORT.
 
-\subsection{Tampilan Halaman Menambahkan \textit{Request} Relokasi}
-Pada halaman menambahkan \textit{request} relokasi menggunakan HTML, CSS, PHP dan Javascript. Sebuah \textit{form} ditampilkan kemudian user mengisikan data-data yang diperlukan. \textit{Form} tersebut akan menampung data-data yang diperlukan, kemudian akan disimpan ke dalam basis data sistem. Gambar \ref{figure:tambahReqRelokasi} adalah tampilan dan gambar \ref{lst:addrelokasi1}, \ref{lst:addrelokasi2} dan \ref{lst:addrelokasi3} adalah potongan kode halaman menambahkan \textit{request} relokasi.
 \begin{figure}[h!]
-\centerline
-{\includegraphics[width=10cm,height=7.5cm]{bab5/addReqRelokasi.png}}
-\caption{Potongan Halaman Menambahkan \textit{Request} Relokasi}
-\label{figure:tambahReqRelokasi}
+	\centerline
+	{\includegraphics[width=10cm,height=5cm]{bab5/tampilanRequest.png}}
+	\caption{Potongan Halaman \textit{Upload} TPORT}
+	\label{figure:requestTPORT}
 \end{figure}
 
-\lstinputlisting[language=PHP, firstline=34, lastline=45, firstnumber=1, caption=Potongan Kode Tampilan Menambahkan \textit{Request} Relokasi (1), label={lst:addrelokasi1}]{bab5/src/RelocationRequestController.php}
-\lstinputlisting[language=PHP, firstline=46, lastline=82, firstnumber=14, caption=Potongan Kode Tampilan Menambahkan \textit{Request} Relokasi (2), label={lst:addrelokasi2}]{bab5/src/RelocationRequestController.php}
-\lstinputlisting[language=PHP, firstline=83, lastline=109, firstnumber=51, caption=Potongan Kode Tampilan Menambahkan \textit{Request} Relokasi (3), label={lst:addrelokasi3}]{bab5/src/RelocationRequestController.php}
+\lstinputlisting[language=PHP, firstline=1, lastline=21, firstnumber=1, caption=Potongan Kode Tampilan Halaman \textit{Request} TPORT, label={lst:request}]{bab5/src/halamanReport.php}
 
-\subsection{Tampilan Halaman Menambahkan SIK}
-Pada halaman menambahkan SIK menggunakan HTML, CSS, PHP dan Javascript. Sebuah \textit{form} ditampilkan kemudian user mengisikan data-data yang diperlukan. \textit{Form} tersebut akan menampung data-data yang diperlukan, kemudian akan disimpan ke dalam basis data sistem. Pada pengisian nomor \textit{request} relokasi, didapatkan dari \textit{record} pada basis data sistem. Gambar \ref*{figure:tambahSIK} adalah tampilan dan gambar \ref{lst:addSIK1} dan \ref{lst:addSIK2} adalah potongan kode dari halaman menambahkan SIK.
+\subsection{Tampilan Halaman \textit{Upload} TPORT}
+Pada halaman menambahkan \textit{upload} TPORT bahasa yang digunakan adalah HTML, CSS, PHP dan Javascript. Sebuah \textit{form} akan ditampilkan dan kemudian pengguna akan mengisikan data-data sesuai spesifikasi file yang diupload. File yang diupload berupa file .csv (\textit{Comma Separated Values}). \textit{Form} tersebut akan menampung data-data yang diperlukan, kemudian akan disimpan ke dalam basis data sistem. Gambar \ref{figure:uploadTPORT} adalah tampilan halaman \textit{upload} dan gambar \ref{lst:uploadTPORT} adalah potongan kode halaman \textit{upload} TPORT.
+
 \begin{figure}[h!]
 \centerline
-{\includegraphics[width=10cm,height=6cm]{bab5/addSIK.png}}
-\caption{Potongan Halaman Menambahkan SIK}
-\label{figure:tambahSIK}
+{\includegraphics[width=10cm,height=5cm]{bab5/tampilanUpload.png}}
+\caption{Potongan Halaman \textit{Upload} TPORT}
+\label{figure:uploadTPORT}
 \end{figure}
 
-\lstinputlisting[language=PHP, firstline=72, lastline=86, firstnumber=1, caption=Potongan Kode Tampilan Menambahkan SIK(1), label={lst:addSIK1}]{bab5/src/WorkPermitController.php}
-\lstinputlisting[language=PHP, firstline=87, lastline=110, firstnumber=18, caption=Potongan Kode Tampilan Menambahkan SIK(2), label={lst:addSIK2}]{bab5/src/WorkPermitController.php}
+\lstinputlisting[language=PHP, firstline=1, lastline=59, firstnumber=1, caption=Potongan Kode Tampilan \textit{Upload} TPORT, label={lst:uploadTPORT}]{bab5/src/halamanUpload.php}
+
+\subsection{Tampilan Halaman Target TPORT}
+Pada halaman target TPORT bahasa yang digunakan adalah HTML, CSS, PHP dan Javascript. Sebuah \textit{form} akan ditampilkan kemudian pengguna mengisikan nilai \textit{revenue} sesuai target yang ingin diraih untuk tiap kluster. \textit{Form} tersebut akan menampung data-data yang diperlukan, kemudian akan disimpan ke dalam basis data sistem. Gambar \ref{figure:targetTPORT} adalah tampilan halaman dan gambar \ref{lst:targetTPORT} adalah potongan kode dari halaman target.
+
+\lstinputlisting[language=PHP, firstline=1, lastline=43, firstnumber=1, caption=Potongan Kode Tampilan Target TPORT, label={lst:targetTPORT}]{bab5/src/halamanTarget.php}
+
+\begin{figure}[h!]
+	\centerline
+	{\includegraphics[width=10cm,height=5cm]{bab5/tampilanTarget.png}}
+	\caption{Potongan Halaman Target TPORT}
+	\label{figure:targetTPORT}
+\end{figure}
 
 \subsection{Halaman Detail SIK}
 Pada halaman detail SIK menggunakan HTML, CSS dan PHP. Pada halaman ini, user dapat melihat rincian pekerjaan yang akan dilakukan pada permintaan relokasi yang telah dibuat, dan keterangan-keterangan lain seperti PIC pengerjaan, Nomor Surat Perintah Kerja, dan informasi-infromasi lain. Halaman detail SIK ini juga memungkinkan admin menambahkan eksekusi, dengan cara mengubah status pengerjaan proyek. Tombol \textit{accept} hanya dapat digunakan apabila user telah meng\textit{upload} surat SIK yang telah disetujui oleh Kepala Divisi. Gambar \ref{lst:detailSIK} adalah potongan kode dari halaman detail SIK.
