@@ -56,23 +56,14 @@ Pada halaman target TPORT bahasa yang digunakan adalah HTML, CSS, PHP dan Javasc
 	\label{figure:targetTPORT}
 \end{figure}
 
-\subsection{Halaman Detail SIK}
-Pada halaman detail SIK menggunakan HTML, CSS dan PHP. Pada halaman ini, user dapat melihat rincian pekerjaan yang akan dilakukan pada permintaan relokasi yang telah dibuat, dan keterangan-keterangan lain seperti PIC pengerjaan, Nomor Surat Perintah Kerja, dan informasi-infromasi lain. Halaman detail SIK ini juga memungkinkan admin menambahkan eksekusi, dengan cara mengubah status pengerjaan proyek. Tombol \textit{accept} hanya dapat digunakan apabila user telah meng\textit{upload} surat SIK yang telah disetujui oleh Kepala Divisi. Gambar \ref{lst:detailSIK} adalah potongan kode dari halaman detail SIK.
+\subsection{Halaman Detail Pencapaian \textit{Revenue}}
+Pada halaman detail pencapaian \textit{revenue} bahasa pemrograman yang digunakan adalah HTML, CSS dan PHP. Pada halaman ini, pengguna dapat melihat detail pencapaian \textit{revenue} berdasarkan wilayah, tanggal, dan kategori yang dipilih. Halaman ini akan menampilkan detail informasi sesuai pilihan pengguna tadi. Gambar \ref{figure:pencapaianTPORT} adalah tampilan halaman dan \ref{lst:pencapaianTPORT} adalah potongan kode dari halaman detail pencapaian \textit{revenue}.
 
-\lstinputlisting[language=PHP, firstline=66, lastline=74, firstnumber=1, caption=Potongan Kode Tampilan Detail SIK, label={lst:detailSIK}]{bab5/src/WorkPermitController.php}
+\begin{figure}[h!]
+	\centerline
+	{\includegraphics[width=10cm,height=5cm]{bab5/tampilanDetailPencapaian.png}}
+	\caption{Potongan Halaman Detail Pencapaian \textit{Revenue}}
+	\label{figure:pencapaianTPORT}
+\end{figure}
 
-\subsection{Halaman Detail Eksekusi}
-Pada halaman detail Eksekusi menggunakan HTML, CSS dan PHP. Pada halaman ini, user dapat melihat rincian pekerjaan yang akan dilakukan pada permintaan relokasi. Halaman detail eksekusi ini juga memungkinkan admin menambahkan penagihan, dengan cara mengubah status pengerjaan proyek. Tombol selesai hanya dapat digunakan apabila user telah meng\textit{upload} berita acara dan tagihan yang diberikan oleh pihak provider. Gambar \ref{lst:detailEksekusi} adalah potongan kode dari halaman detail eksekusi.
-
-\lstinputlisting[language=PHP, firstline=70, lastline=78, firstnumber=1, caption=Potongan Kode Tampilan Detail Eksekusi, label={lst:detailEksekusi}]{bab5/src/ExecutionController.php}
-
-\subsection{Halaman Detail Penagihan}
-Pada halaman detail Penagihan menggunakan HTML, CSS dan PHP. Pada halaman ini, user dapat melihat proses penagihan dan pembayaran. Halaman detail SIK ini juga memungkinkan admin menambahkan proses finish, dengan cara mengubah status pembayaran proyek. Tombol selesai hanya dapat digunakan apabila user telah meng\textit{upload} surat pengantar pembayaran kepada pihak provider. Gambar \ref{lst:detailPenagihan} adalah potongan kode dari halaman detail penagihan.
-
-\lstinputlisting[language=PHP, firstline=50, lastline=58, firstnumber=1, caption=Potongan Kode Tampilan Detail Penagihan, label={lst:detailPenagihan}]{bab5/src/BillingController.php}
-
-\subsection{Halaman Detail \textit{Finish}}
-Pada halaman detail Finish menggunakan HTML, CSS dan PHP. Pada halaman ini, user dapat melihat semua informasi yang berhubungan dengan pengerjaan proyek relokasi. Gambar \ref{lst:detailFinish1} dan \ref{lst:detailFinish2} adalah potongan kode dari halaman detail \textit{finish}.
-
-\lstinputlisting[language=PHP, firstline=40, lastline=45, firstnumber=1, caption=Potongan Kode Tampilan Detail Finish(1), label={lst:detailFinish1}]{bab5/src/MainController.php}
-\lstinputlisting[language=PHP, firstline=45, lastline=63, firstnumber=7, caption=Potongan Kode Tampilan Detail Finish(2), label={lst:detailFinish2}]{bab5/src/MainController.php} 
+\lstinputlisting[language=PHP, firstline=1, lastline=24, firstnumber=1, caption=Potongan Kode Tampilan Target TPORT, label={lst:pencapaianTPORT}]{bab5/src/halamanDetail.php}
