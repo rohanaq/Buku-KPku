@@ -1,5 +1,5 @@
 \chapter{HASIL DAN UJI COBA}
-Pada bab ini akan dipaparkan hasil uji coba saat sistem dijalankan. Uji coba sistem \textit{Monitoring} SIK akan dilakukan untuk memastikan kualitas perangkat lunak yang dikembangkan dengan analisis dan perancangan perangkat lunak.
+Pada bab ini akan dipaparkan hasil uji coba saat sistem dijalankan. Uji coba sistem TPORT akan dilakukan untuk memastikan kualitas perangkat lunak yang dikembangkan dengan analisis dan perancangan perangkat lunak.
 \section{Lingkungan Uji Coba}
 Lingkungan uji coba sistem pada Kerja Praktik kali ini meliputi perangkat keras dan perangkat lunak adalah sebagai berikut:
 \begin{enumerate}
@@ -15,50 +15,45 @@ Lingkungan uji coba sistem pada Kerja Praktik kali ini meliputi perangkat keras 
 \end{enumerate}
 
 \section{Skenario Pengujian}
-Skenario pengujian yang akan dilakukan pada aplikasi \textit{Monitoring} SIK adalah melakukan peran sebagai admin yang sedang membuka aplikasi. Langkah-langkah dari skenario adalah sebagai berikut:
+Skenario pengujian yang akan dilakukan pada aplikasi TPORT adalah melakukan peran sebagai admin yang sedang membuka aplikasi. Langkah-langkah dari skenario adalah sebagai berikut:
 	\begin{enumerate}
-	\item User membuka aplikasi \textit{Monitoring} SIK.
-	\item User memilih menu \textit{request} relokasi, SIK, eksekusi, penagihan dan finish.
-	\item User menambahkan data \textit{request} relokasi dan SIK dengan mengisi \textit{form}.
-	\item User melihat detail \textit{request} relokasi, SIK, eksekusi, penagihan dan finish.
+	\item Pengguna membuka aplikasi TPORT
+	\item Pengguna memilih menu \textit{upload}, \textit{request}, dan target
+	\item Pengguna menambahkan data pencapaian \textit{revenue} dengan mengupload file pada halaman upload
+	\item Pengguna melihat detail hasil pencapaian \textit{revenue} pada halaman \textit{request}
 	\end{enumerate}
-\subsection{Pengujian Menampilkan Data \textit{Request} Relokasi}
-Pengujian ini dilakukan terhadap fungsionalitas menampilkan data \textit{request} relokasi. Tabel \ref{tab:list_req_relokasi} menjelaskan pengujian fungsionalitas ini. Gambar \ref{figure:data_req_relokasi} adalah hasil fungsionalitas menampilkan data \textit{request} relokasi.
+	
+\subsection{Pengujian Mengupload Data Pencapaian \textit{Revenue}}
+Pengujian ini dilakukan terhadap fungsionalitas \textit{upload} data pencapaian \textit{revenue}. Tabel \ref{tab:list_upload} menjelaskan pengujian fungsionalitas ini.
 
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{|p{4cm}|p{6cm}|}
 	\hline
 	Kode \textit{Use Case} & UC-001\\ \hline
-	Tujuan Pengujian & Menampilkan semua data \textit{request} relokasi\\ \hline
-	Data Masukan & - \\ \hline
+	Tujuan Pengujian & \textit{Upload} semua data hasil pencapaian \textit{revenue}\\ \hline
+	Data Masukan & File .csv \\ \hline
 	Prosedur Pengujian & 
 		\begin{enumerate}
 		\item Pengguna \textit{login} sebagai administrator
-		\item Pengguna memilih menu \textit{request} relokasi
+		\item Pengguna memilih menu \textit{upload}
 		\end{enumerate}\\ \hline
-	Hasil yang diharapkan & Semua data \textit{request} relokasi dapat ditampilkan pada menu \textit{request} relokasi dan dapat dipilih untuk melihat detailnya \\ \hline
-	Hasil yang diperoleh & Semua data \textit{request} relokasi dapat ditampilkan pada menu \textit{request} relokasi dan detailnya dapat ditampilkan\\ \hline
-	Kesimpulan & Proses menampilkan data \textit{request} relokasi beserta detailnya berhasil\\ \hline
-	Kondisi Akhir & Pengguna mendapatkan semua informasi data \textit{request} relokasi\\ \hline
-	\end{tabular}\caption{Skenario Pengujian Menampilkan Data \textit{Request} Relokasi}
-	\label{tab:list_req_relokasi}
+	Hasil yang diharapkan & Semua data hasil pencapaian \textit{revenue} dapat di-\textit{upload} dan data yang di-\textit{upload} dapat masuk ke basis data sistem \\ \hline
+	Hasil yang diperoleh & Semua data hasil pencapaian \textit{revenue} dapat di-\textit{upload} dan masuk ke basis data sistem \\ \hline
+	Kesimpulan & Proses \textit{upload} hasil pencapaian \textit{revenue} berhasil \\ \hline
+	Kondisi Akhir & Data hasil pencapaian \textit{revenue} masuk ke basis data sistem\\ \hline
+	\end{tabular}\caption{Skenario Pengujian \textit{Upload} Data Hasil Pencapaian \textit{Revenue}}
+	\label{tab:list_upload}
 \end{table}
 
-\begin{figure}[h!]
-\centerline
-{\includegraphics[width=10cm,height=5cm]{bab6/listReqRelokasi.png}}
-\caption{Data \textit{Request} Relokasi}
-\label{figure:data_req_relokasi}
-\end{figure}
+\subsection{Pengujian Mengelola Target Pencapaian \textit{Revenue}}
+Pengujian ini dilakukan terhadap fungsionalitas mengelola target pencapaian \textit{revenue}. Tabel \ref{tab:list_target} menjelaskan pengujian fungsionalitas ini. Gambar \ref{figure:lihatTarget} adalah hasil fungsionalitas menampilkan target serta mengubah target.
 
-\subsection{Pengujian Menampilkan Data SIK}
-Pengujian ini dilakukan terhadap fungsionalitas menampilkan data SIK. Tabel \ref{tab:list_sik} menjelaskan pengujian fungsionalitas ini. Gambar \ref{figure:data_detail_sik} adalah hasil fungsionalitas menampilkan data SIK.
 \begin{figure}[h!]
 \centerline
-{\includegraphics[width=10cm,height=5cm]{bab6/detailSIK.png}}
-\caption{Data Detail SIK}
-\label{figure:data_detail_sik}
+{\includegraphics[width=10cm,height=5cm]{bab6/halamanTarget.png}}
+\caption{Detail Data Target}
+\label{figure:lihatTarget}
 \end{figure}
 
 \begin{table}[h!]
@@ -66,126 +61,65 @@ Pengujian ini dilakukan terhadap fungsionalitas menampilkan data SIK. Tabel \ref
 	\begin{tabular}{|p{4cm}|p{6cm}|}
 	\hline
 	Kode \textit{Use Case} & UC-002\\ \hline
-	Tujuan Pengujian & Menampilkan semua data SIK\\ \hline
+	Tujuan Pengujian & Menampilkan dan mengubah target pencapaian \textit{revenue}\\ \hline
 	Data Masukan & - \\ \hline
 	Prosedur Pengujian & 
 		\begin{enumerate}
 		\item Pengguna \textit{login} sebagai administrator
-		\item Pengguna memilih menu SIK
+		\item Pengguna memilih menu target
 		\end{enumerate}\\ \hline
-	Hasil yang diharapkan & Semua data SIK dapat ditampilkan pada menu SIK dan dapat dipilih untuk melihat detailnya \\ \hline
-	Hasil yang diperoleh & Semua data SIK dapat ditampilkan pada menu SIK dan detailnya dapat ditampilkan\\ \hline
-	Kesimpulan & Proses menampilkan data SIK beserta detailnya berhasil\\ \hline
-	Kondisi Akhir & Pengguna mendapatkan semua informasi data SIK\\ \hline
-	\end{tabular}\caption{Skenario Pengujian Menampilkan Data SIK}
-	\label{tab:list_sik}
+	Hasil yang diharapkan & Semua data target pencapaian \textit{revenue} dapat ditampilkan serta dapat diubah pada menu target \\ \hline
+	Hasil yang diperoleh & Semua data target pencapaian \textit{revenue} dapat ditampilkan dan diubah \\ \hline
+	Kesimpulan & Proses menampilkan dan mengubah data target pencapaian \textit{revenue} berhasil\\ \hline
+	Kondisi Akhir & Pengguna mendapatkan semua informasi data target pencapaian serta dapat mengubahnya \textit{revenue}\\ \hline
+	\end{tabular}\caption{Skenario Pengujian Menampilkan dan Mengubah Data Target Pencapaian \textit{Revenue}}
+	\label{tab:list_target}
 \end{table}
 
-\subsection{Pengujian Menampilkan Data Eksekusi}
-Pengujian ini dilakukan terhadap fungsionalitas menampilkan data Eksekusi. Tabel \ref{tab:list_eksekusi_1} dan \ref{tab:list_eksekusi_2} menjelaskan pengujian fungsionalitas ini. Gambar \ref{figure:data_detail_eksekusi} adalah hasil fungsionalitas menampilkan data Eksekusi.
-
-\begin{table}[h!]
-	\centering
-	\begin{tabular}{|p{4cm}|p{6cm}|}
-	\hline
-	Kode \textit{Use Case} & UC-003\\ \hline
-	Tujuan Pengujian & Menampilkan semua data Eksekusi\\ \hline
-	Data Masukan & - \\ \hline
-	\end{tabular}\caption{Skenario Pengujian Menampilkan Data Eksekusi(1)}
-	\label{tab:list_eksekusi_1}
-\end{table}
-
-\begin{table}[h!]
-	\centering
-	\begin{tabular}{|p{4cm}|p{6cm}|}
-	\hline
-	Prosedur Pengujian & 
-		\begin{enumerate}
-		\item Pengguna \textit{login} sebagai administrator
-		\item Pengguna memilih menu Eksekusi
-		\end{enumerate}\\ \hline
-	Hasil yang diharapkan & Semua data Eksekusi dapat ditampilkan pada menu Eksekusi dan dapat dipilih untuk melihat detailnya \\ \hline
-	Hasil yang diperoleh & Semua data Eksekusi dapat ditampilkan pada menu Eksekusi dan detailnya dapat ditampilkan\\ \hline
-	Kesimpulan & Proses menampilkan data Eksekusi beserta detailnya berhasil\\ \hline
-	Kondisi Akhir & Pengguna mendapatkan semua informasi data Eksekusi\\ \hline
-	\end{tabular}\caption{Skenario Pengujian Menampilkan Data Eksekusi(2)}
-		\label{tab:list_eksekusi_2}
-\end{table}
+\subsection{Pengujian Menampilkan Hasil Pencapaian \textit{Revenue}}
+Pengujian ini dilakukan terhadap fungsionalitas menampilkan hasil pencapaian \textit{revenue}. Tabel \ref{tab:list_request} menjelaskan pengujian fungsionalitas ini. Gambar \ref{figure:requestL1}, \ref{figure:requestL3}, dan \ref{figure:requestTop5} adalah hasil fungsionalitas menampilkan hasil pencapaian \textit{revenue}.
 
 \begin{figure}[h!]
-\centerline
-{\includegraphics[width=10cm,height=5cm]{bab6/detailExecution.png}}
-\caption{Data Detail Eksekusi}
-\label{figure:data_detail_eksekusi}
+	\centerline
+	{\includegraphics[width=10cm,height=5cm]{bab6/halamanL1.png}}
+	\caption{Hasil Pencapaian \textit{Revenue} Berdasarkan L1}
+	\label{figure:requestL1}
 \end{figure}
 
-\subsection{Pengujian Menampilkan Data Penagihan}
-Pengujian ini dilakukan terhadap fungsionalitas menampilkan data Penagihan. Tabel \ref{tab:list_penagihan_1} dan \ref{tab:list_penagihan_2} menjelaskan pengujian fungsionalitas ini. Gambar \ref{figure:data_detail_penagihan} adalah hasil fungsionalitas menampilkan data penagihan.
 \begin{figure}[h!]
-\centerline
-{\includegraphics[width=10cm,height=4.5cm]{bab6/detailPenagihan.png}}
-\caption{Data Detail Penagihan}
-\label{figure:data_detail_penagihan}
+	\centerline
+	{\includegraphics[width=10cm,height=5cm]{bab6/halamanL3.png}}
+	\caption{Hasil Pencapaian \textit{Revenue} Berdasarkan L3}
+	\label{figure:requestL3}
+\end{figure}
+
+\begin{figure}[h!]
+	\centerline
+	{\includegraphics[width=10cm,height=5cm]{bab6/halamanT5.png}}
+	\caption{Hasil Pencapaian \textit{Revenue} Berdasarkan Top 5}
+	\label{figure:requestTop5}
 \end{figure}
 
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{|p{4cm}|p{6cm}|}
-	\hline
-	Kode \textit{Use Case} & UC-004\\ \hline
-	Tujuan Pengujian & Menampilkan semua data Penagihan\\ \hline
-	Data Masukan & - \\ \hline
-	Prosedur Pengujian & 
+		\hline
+		Kode \textit{Use Case} & UC-003\\ \hline
+		Tujuan Pengujian & Menampilkan hasil pencapaian \textit{revenue} berdasarkan L1, L3, dan Top 5\\ \hline
+		Data Masukan & - \\ \hline
+		Prosedur Pengujian & 
 		\begin{enumerate}
-		\item Pengguna \textit{login} sebagai administrator
-		\item Pengguna memilih menu Penagihan
+			\item Pengguna \textit{login} sebagai administrator
+			\item Pengguna memilih menu \textit{request}
 		\end{enumerate}\\ \hline
-	\end{tabular}\caption{Skenario Pengujian Menampilkan Data Penagihan(1)}
-	\label{tab:list_penagihan_1}
+		Hasil yang diharapkan & Semua hasil pencapaian \textit{revenue} berdasarkan L1, L3, dan Top5 dapat ditampilkan \\ \hline
+		Hasil yang diperoleh & Semua hasil pencapaian \textit{revenue} berdasarkan L1, L3, dan Top5 dapat ditampilkan \\ \hline
+		Kesimpulan & Proses menampilkan hasil pencapaian \textit{revenue} berdasarkan L1, L3, dan Top 5 berhasil\\ \hline
+		Kondisi Akhir & Pengguna dapat melihat hasil pencapaian \textit{revenue} berdasarkan L1, L3, dan Top 5\\ \hline
+	\end{tabular}\caption{Skenario Pengujian Menampilkan Hasil Pencapaian \textit{Revenue}}
+	\label{tab:list_request}
 \end{table}
 
-\begin{table}[h!]
-	\centering
-	\begin{tabular}{|p{4cm}|p{6cm}|}
-	\hline
-	Hasil yang diharapkan & Semua data Penagihan dapat ditampilkan pada menu Penagihan dan dapat dipilih untuk melihat detailnya \\ \hline
-	Hasil yang diperoleh & Semua data Penagihan dapat ditampilkan pada menu Penagihan dan detailnya dapat ditampilkan\\ \hline
-	Kesimpulan & Proses menampilkan data Penagihan beserta detailnya berhasil\\ \hline
-	Kondisi Akhir & Pengguna mendapatkan semua informasi data Penagihan\\ \hline
-	\end{tabular}\caption{Skenario Pengujian Menampilkan Data Penagihan(2)}
-		\label{tab:list_penagihan_2}
-\end{table}
-
-\subsection{Pengujian Menampilkan Data \textit{Finish}}
-Pengujian ini dilakukan terhadap fungsionalitas menampilkan data \textit{Finish}. Tabel \ref{tab:list_finish} menjelaskan pengujian fungsionalitas ini. Gambar \ref{figure:data_detail_finish} adalah hasil fungsionalitas menampilkan data \textit{finish}.
-
-\begin{table}[h!]
-	\centering
-	\begin{tabular}{|p{4cm}|p{6cm}|}
-	\hline
-	Kode \textit{Use Case} & UC-005\\ \hline
-	Tujuan Pengujian & Menampilkan semua data \textit{Finish}\\ \hline
-	Data Masukan & - \\ \hline
-	Prosedur Pengujian & 
-		\begin{enumerate}
-		\item Pengguna \textit{login} sebagai administrator
-		\item Pengguna memilih menu \textit{Finish}
-		\end{enumerate}\\ \hline
-	Hasil yang diharapkan & Semua data \textit{Finish} dapat ditampilkan pada menu \textit{Finish} dan dapat dipilih untuk melihat detailnya \\ \hline
-	Hasil yang diperoleh & Semua data \textit{Finish} dapat ditampilkan pada menu \textit{Finish} dan detailnya dapat ditampilkan\\ \hline
-	Kesimpulan & Proses menampilkan data \textit{Finish} beserta detailnya berhasil\\ \hline
-	Kesimpulan & Proses menampilkan data \textit{Finish} beserta detailnya berhasil\\ \hline
-	Kondisi Akhir & Pengguna mendapatkan semua informasi data \textit{Finish}\\ \hline
-	\end{tabular}\caption{Skenario Pengujian Menampilkan Data \textit{Finish}}
-	\label{tab:list_finish}
-\end{table}
-
-\begin{figure}[h!]
-\centerline
-{\includegraphics[width=10cm,height=5cm]{bab6/finish.png}}
-\caption{Data Detail \textit{Finish}}
-\label{figure:data_detail_finish}
-\end{figure}
 
 \section{Evaluasi Pengujian}
 \tab Hasil pengujian dihasilkan pengamatan lebih lanjut terhadap perilaku sistem \textit{Monitoring} SIK terhadap skenario kasus uji coba. Pengujian dilakukan \textit{internal team} untuk mencoba sistem yang telah diterapkan. Tabel \ref{tab:hasil_pengujian} adalah hasil pengujian pada sistem informasi \textit{monitoring} SIK.
